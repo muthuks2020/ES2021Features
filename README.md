@@ -15,6 +15,7 @@ a && (a = b);
 // "QQ Equals"
 a ??= b;
 a ?? (a = b);
+```
 
 ## Logical Assignment Operators
 
@@ -31,6 +32,7 @@ const updateID = emp => {
   // Or use logical assignment operator.
   emp.id ||= 1
 }
+```
 
 ```JavaScript
 
@@ -40,7 +42,7 @@ function setOpts(opts) {
 }
 
 setOpts({ cat: 'meow' })
-
+```
 
 ## Numeric Separators
 
