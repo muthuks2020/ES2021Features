@@ -33,7 +33,7 @@ const updateID = emp => {
   emp.id ||= 1
 }
 ```
-[REF](https://github.com/tc39/proposal-numeric-separator)
+
 ```JavaScript
 
 function setOpts(opts) {
@@ -56,3 +56,7 @@ let fee = 12_300;       // $12,300 (woah, that fee!)
 let amount = 12345_00;  // 12,345 (1234500 cents, apparently)
 let amount = 123_4500;  // 123.45 (4-fixed financial)
 let amount = 1_234_500; // 1,234,500
+```
+
+
+[REF](https://github.com/tc39/proposal-numeric-separator)
