@@ -58,5 +58,31 @@ let amount = 123_4500;  // 123.45 (4-fixed financial)
 let amount = 1_234_500; // 1,234,500
 ```
 
+```JavaScript
+0.000_001 // 1 millionth
+1e10_000  // 10^10000 -- granted, far less useful / in-range...
+0xA0_B0_C0;
+
+```
+
 
 [REF](https://github.com/tc39/proposal-numeric-separator)
+
+## Promise.any and AggregateError
+
+
+```JavaScript
+Promise.any([
+  fetch('https://v8.dev/').then(() => 'home'),
+  fetch('https://v8.dev/blog').then(() => 'blog'),
+  fetch('https://v8.dev/docs').then(() => 'docs')
+]).then((first) => {
+  // Any of the promises was fulfilled.
+  console.log(first);
+  // → 'home'
+}).catch((error) => {
+  // All of the promises were rejected.
+  console.log(error);
+});
+```
+^ In the above example error is an AggregateError
