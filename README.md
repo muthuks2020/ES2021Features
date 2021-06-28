@@ -33,7 +33,7 @@ const updateID = emp => {
   emp.id ||= 1
 }
 ```
-
+[REF](https://github.com/tc39/proposal-numeric-separator)
 ```JavaScript
 
 function setOpts(opts) {
