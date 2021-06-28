@@ -17,7 +17,7 @@ a ??= b;
 a ?? (a = b);
 
 
-#  Logical Assignment Operators
+##  Logical Assignment Operators
 
 ```JavaScript
 
@@ -43,7 +43,7 @@ function setOpts(opts) {
 setOpts({ cat: 'meow' })
 
 
-# Numeric Separators
+### Numeric Separators
 
 ```JavaScript
 
